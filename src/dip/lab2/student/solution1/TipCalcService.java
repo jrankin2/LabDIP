@@ -4,14 +4,14 @@
  */
 package dip.lab2.student.solution1;
 
-public class TipService {
+public class TipCalcService {
     private TipCalculator tipCalculator;
     
-    public TipService(){
+    public TipCalcService(){
         
     }
     
-    public TipService(TipCalculator t){
+    public TipCalcService(TipCalculator t){
         tipCalculator = t;
     }
     

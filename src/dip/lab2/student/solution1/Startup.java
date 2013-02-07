@@ -26,11 +26,11 @@ public class Startup {
             new FoodServiceTipCalculator(ServiceQuality.FAIR, 1)
         };
         
-        TipService service = new TipService();
+        TipCalcService service = new TipCalcService();
         
         for(TipCalculator t : calculators){
             //this...
-            System.out.println(TipService.getTipFromCalculator(t));
+            System.out.println(TipCalcService.getTipFromCalculator(t));
             
             //or this...
             service.setTipCalculator(t);
